@@ -31,3 +31,5 @@ elif [ $? -ne 0 ]; then
 fi
 
 echo "🎉 All checks passed! Committing..."
+echo "Adding Modified files..."
+git add .

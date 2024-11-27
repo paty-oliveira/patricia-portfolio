@@ -23,8 +23,10 @@
     "noUncheckedSideEffectImports": true,
 
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "@/*": ["./src/*"],
+      "./*": ["./*", "./*.ts", "./*.tsx"]
+    },
+    "baseUrl": "."
   },
   "include": ["src", "./jest.setup.ts"]
 }
