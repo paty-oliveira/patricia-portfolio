@@ -22,7 +22,7 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "✅ Running tests with Jest..."
-npm run test
+npm run test-changed-files
 if [ $? -eq 0 ]; then
   echo "⚠️ No tests found. Skipping."
 elif [ $? -ne 0 ]; then

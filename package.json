@@ -11,7 +11,8 @@
     "lint": "eslint . --fix --max-warnings=0",
     "format": "prettier --check 'src/**/*.{js,ts,tsx,json,css,md}'",
     "type-check": "tsc --noEmit",
-    "test": "jest . --findRelatedTests --passWithNoTests --bail",
+    "test": "jest .",
+    "test-changed-files": "jest . --findRelatedTests --passWithNoTests --bail",
     "pre-commit": "npm run lint && npm run format && npm run type-check && npm run test"
   },
   "dependencies": {
