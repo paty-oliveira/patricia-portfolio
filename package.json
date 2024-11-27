@@ -6,10 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "fix-lint": "eslint . --fix",
     "preview": "vite preview",
-    "test": "jest"
+    "prepare": "husky",
+    "lint": "eslint . --fix --max-warnings=0",
+    "format": "prettier --check 'src/**/*.{js,ts,tsx,json,css,md}'",
+    "type-check": "tsc --noEmit",
+    "test": "jest . --findRelatedTests --passWithNoTests --bail",
+    "pre-commit": "npm run lint && npm run format && npm run type-check && npm run test"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.2.1",
@@ -30,9 +33,11 @@
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.15.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
     "globals": "^15.12.0",
+    "husky": "^9.1.7",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "jest-transformer-svg": "^2.0.2",
