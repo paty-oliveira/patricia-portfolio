@@ -22,6 +22,7 @@ export const globalCssConfig: GlobalStyleObject = {
     lineHeight: 1.2,
     fontFamily: "Montserrat",
     color: "#000",
+    backgroundColor: "inherit",
   },
   "input, button, textarea, select": {
     font: "inherit",
@@ -29,7 +30,7 @@ export const globalCssConfig: GlobalStyleObject = {
     padding: 0,
     margin: 0,
   },
-  "ul, ol": {
+  "ul, ol, li": {
     listStyle: "none",
   },
   a: {
@@ -45,6 +46,7 @@ export const globalCssConfig: GlobalStyleObject = {
   },
   p: {
     margin: 0,
+    backgroundColor: "inherit",
   },
   h1: {
     fontSize: "45px",
@@ -63,5 +65,11 @@ export const globalCssConfig: GlobalStyleObject = {
   },
   h6: {
     fontSize: "16px",
+  },
+  main: {
+    display: "grid",
+    gridTemplateColumns: "25% 1fr",
+    margin: "36px",
+    padding: "36px",
   },
 };

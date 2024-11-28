@@ -28,5 +28,5 @@
     },
     "baseUrl": "."
   },
-  "include": ["src", "./jest.setup.ts"]
+  "include": ["src", "./jest.setup.ts", "declaration.d.ts"]
 }

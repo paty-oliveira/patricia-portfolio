@@ -1,0 +1,5 @@
+.right {
+  grid-column: 2 / 3;
+  grid-row: auto;
+  margin-left: 20px;
+}
