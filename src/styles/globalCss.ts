@@ -66,10 +66,4 @@ export const globalCssConfig: GlobalStyleObject = {
   h6: {
     fontSize: "16px",
   },
-  main: {
-    display: "grid",
-    gridTemplateColumns: "25% 1fr",
-    margin: "36px",
-    padding: "36px",
-  },
 };

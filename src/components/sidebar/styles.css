@@ -1,8 +1,0 @@
-.left {
-  grid-column: 1;
-  grid-row: auto;
-  padding: 60px;
-  border: solid 2px black;
-  display: flex;
-  flex-direction: column;
-}
