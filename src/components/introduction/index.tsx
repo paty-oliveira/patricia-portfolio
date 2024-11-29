@@ -28,11 +28,7 @@ const Introduction: FC = () => {
           </p>
         </div>
         <div className="introduction__img_content">
-          <img
-            className="my-photo"
-            src="/public/my-photo.jpeg"
-            alt="my photography"
-          />
+          <img className="my-photo" src="/my-photo.jpeg" alt="my photography" />
         </div>
       </div>
     </section>
