@@ -1,0 +1,10 @@
+/* Utilities classes */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weight-600 {
+  font-weight: 600;
+}

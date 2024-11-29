@@ -5,13 +5,11 @@ import { routePages } from "./routePages";
 
 const Router: FC = () => {
   return (
-    <section>
-      <Routes>
-        {routePages.map(({ path, element, key }) => (
-          <Route key={key} path={path} element={element} />
-        ))}
-      </Routes>
-    </section>
+    <Routes>
+      {routePages.map(({ path, element, key }) => (
+        <Route key={key} path={path} element={element} />
+      ))}
+    </Routes>
   );
 };
 

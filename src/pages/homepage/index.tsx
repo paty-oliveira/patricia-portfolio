@@ -2,11 +2,13 @@ import "./styles.css";
 
 import React from "react";
 
+import Header from "@/components/header";
+
 const Homepage: React.FC = () => {
   return (
-    <div>
-      <p>Homepage</p>
-    </div>
+    <main className="main-layout">
+      <Header />
+    </main>
   );
 };
 
