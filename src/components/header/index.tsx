@@ -2,11 +2,18 @@ import "./styles.css";
 import "../../styles/shared.css";
 
 import { FC } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Header: FC = () => {
+  const navigate = useNavigate();
+
+  const handleOnClick = () => {
+    navigate("/");
+  };
+
   return (
     <header className="flex">
-      <div>
+      <div className="logo" onClick={handleOnClick}>
         <h5 className="weight-600">Patrícia Oliveira</h5>
       </div>
       <nav className="flex">
