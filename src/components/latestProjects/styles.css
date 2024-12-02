@@ -1,8 +1,8 @@
-.latest_posts__header {
+.latest_projects__header {
   margin-bottom: 2.5rem;
 }
 
-.latest_posts__content {
+.latest_projects__content {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;

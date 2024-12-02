@@ -1,4 +1,4 @@
-export interface PostProps {
+export interface CardProps {
   title: string;
   description: string;
 }

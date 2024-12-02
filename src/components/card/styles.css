@@ -1,0 +1,25 @@
+.card {
+  border: 1px solid #00000026;
+  padding: 1.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card__content h6 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.card__link {
+  font-weight: 600;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.card__link:hover {
+  color: #000;
+  font-weight: 800;
+  font-size: 1.5rem;
+}

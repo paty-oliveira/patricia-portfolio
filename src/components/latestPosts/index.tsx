@@ -3,7 +3,7 @@ import "./styles.css";
 
 import { FC } from "react";
 
-import Post from "./Post";
+import Card from "../card";
 
 const posts = [
   {
@@ -32,7 +32,7 @@ const LatestPosts: FC = () => {
       </div>
       <div className="latest_posts__content">
         {posts.map(({ title, description, key }) => (
-          <Post key={key} title={title} description={description} />
+          <Card key={key} title={title} description={description} />
         ))}
       </div>
     </section>
