@@ -2,6 +2,7 @@ import "./styles.css";
 
 import React from "react";
 
+import Contacts from "@/components/contacts";
 import Header from "@/components/header";
 import Introduction from "@/components/introduction";
 import JobExperience from "@/components/jobExperience";
@@ -16,6 +17,7 @@ const Homepage: React.FC = () => {
       <LatestPosts />
       <JobExperience />
       <LatestProjects />
+      <Contacts />
     </main>
   );
 };

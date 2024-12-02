@@ -6,7 +6,7 @@ import { FC } from "react";
 const Introduction: FC = () => {
   return (
     <section className="container">
-      <h3 className="introduction__title weight-600">
+      <h3 className="section__header weight-600">
         Hi, I'm Patrícia&nbsp;<span>👋🏻</span>
       </h3>
       <div className="introduction__content">

@@ -21,7 +21,7 @@ const projects = [
 const LatestProjects: FC = () => {
   return (
     <section className="container">
-      <div className="latest_projects__header flex">
+      <div className="section__header flex">
         <h3 className="weight-600">Lastest Projects</h3>
         <a className="page_link">See all projects</a>
       </div>

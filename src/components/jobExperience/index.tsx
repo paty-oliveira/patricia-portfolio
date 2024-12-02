@@ -25,7 +25,7 @@ const jobs = [
 const JobExperience: FC = () => {
   return (
     <section className="container">
-      <div className="experience__header flex">
+      <div className="section__header flex">
         <h3 className="weight-600">Career Journey</h3>
         <a className="page_link">See all work</a>
       </div>

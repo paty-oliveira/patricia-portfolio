@@ -26,7 +26,7 @@ const posts = [
 const LatestPosts: FC = () => {
   return (
     <section className="container">
-      <div className="latest_posts__header flex">
+      <div className="section__header flex">
         <h3 className="weight-600">Latest Posts</h3>
         <a className="page_link">See all posts</a>
       </div>
