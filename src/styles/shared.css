@@ -24,3 +24,13 @@
 .weight-600 {
   font-weight: 600;
 }
+
+.page_link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.page_link:hover {
+  color: #000;
+  font-weight: 700;
+}

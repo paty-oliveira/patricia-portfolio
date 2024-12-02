@@ -4,16 +4,6 @@
   margin-bottom: 2.5rem;
 }
 
-.latest_post__link {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.latest_post__link:hover {
-  color: #000;
-  font-weight: 700;
-}
-
 .latest_posts__content {
   display: flex;
   flex-direction: column;

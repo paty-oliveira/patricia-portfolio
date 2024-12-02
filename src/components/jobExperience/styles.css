@@ -1,0 +1,28 @@
+.experience__header {
+  margin-bottom: 2.5rem;
+  gap: 1rem;
+}
+
+.experience__header h3 {
+  max-width: 70%;
+}
+
+.experience__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience__content > *:not(:last-child) {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px dotted black;
+}
+
+.work_card__header {
+  margin-bottom: 1.5rem;
+}
+
+.work_card__content p {
+  color: black;
+  text-align: justify;
+}

@@ -4,6 +4,7 @@ import React from "react";
 
 import Header from "@/components/header";
 import Introduction from "@/components/introduction";
+import JobExperience from "@/components/jobExperience";
 import LatestPosts from "@/components/latestPosts";
 
 const Homepage: React.FC = () => {
@@ -12,6 +13,7 @@ const Homepage: React.FC = () => {
       <Header />
       <Introduction />
       <LatestPosts />
+      <JobExperience />
     </main>
   );
 };
