@@ -20,27 +20,11 @@
   border-radius: 50%;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
   .introduction__content {
     display: flex;
     gap: 4rem;
     align-items: center;
-  }
-
-  .introduction__text_content {
-    width: 65%;
-  }
-
-  .introduction__img_content {
-    display: block;
-    width: 35%;
-  }
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1440px) {
-  .introduction__content {
-    display: flex;
-    gap: 4rem;
   }
 
   .introduction__text_content {
@@ -57,15 +41,15 @@
   .introduction__content {
     display: flex;
     align-items: center;
-    gap: 6rem;
+    gap: 4rem;
   }
 
   .introduction__text_content {
-    width: 60%;
+    width: 80%;
   }
 
   .introduction__img_content {
     display: block;
-    width: 40%;
+    width: 20%;
   }
 }
