@@ -39,7 +39,9 @@ const Header: FC = () => {
                 <a className="nav__item" href={path} key={name}>
                   {name}
                 </a>
-                <span className="nav__item_separator">/</span>
+                <span key={`${name}-span`} className="nav__item_separator">
+                  /
+                </span>
               </>
             );
           }

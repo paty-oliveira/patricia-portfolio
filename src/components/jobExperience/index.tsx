@@ -32,6 +32,7 @@ const JobExperience: FC = () => {
       <div className="experience__content flex">
         {jobs.map(({ companyName, jobTitle, timePeriod, description }) => (
           <Job
+            key={`${companyName}_${jobTitle}`}
             companyName={companyName}
             jobTitle={jobTitle}
             timePeriod={timePeriod}

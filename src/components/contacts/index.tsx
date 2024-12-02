@@ -2,6 +2,7 @@ import "../../styles/shared.css";
 import "./styles.css";
 
 import { FC } from "react";
+import { FaArrowUp } from "react-icons/fa";
 
 const contacts = [
   {
@@ -23,6 +24,13 @@ const contacts = [
 ];
 
 const Contacts: FC = () => {
+  const handleOnClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <section className=" container">
       <h3 className="section__header weight-600">Let's Connect</h3>
@@ -43,7 +51,12 @@ const Contacts: FC = () => {
                   >
                     {name}
                   </a>
-                  <span className="contacts__social_media_separator">/</span>
+                  <span
+                    key={`${name}-span`}
+                    className="contacts__social_media_separator"
+                  >
+                    /
+                  </span>
                 </>
               );
             }
@@ -53,6 +66,12 @@ const Contacts: FC = () => {
               </a>
             );
           })}
+        </div>
+        <div className="contacts__button_container">
+          <button className="contacts__button" onClick={handleOnClick}>
+            <FaArrowUp />
+            <span>Back to top</span>
+          </button>
         </div>
       </div>
     </section>
