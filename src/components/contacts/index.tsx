@@ -32,7 +32,7 @@ const Contacts: FC = () => {
   };
 
   return (
-    <section className=" container">
+    <section>
       <h3 className="section__header weight-600">Let's Connect</h3>
       <div className="contacts__content">
         <p>

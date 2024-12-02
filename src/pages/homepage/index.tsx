@@ -3,6 +3,7 @@ import "./styles.css";
 import React from "react";
 
 import Contacts from "@/components/contacts";
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Introduction from "@/components/introduction";
 import JobExperience from "@/components/jobExperience";
@@ -18,6 +19,7 @@ const Homepage: React.FC = () => {
       <JobExperience />
       <LatestProjects />
       <Contacts />
+      <Footer />
     </main>
   );
 };
