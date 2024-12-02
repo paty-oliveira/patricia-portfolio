@@ -36,7 +36,11 @@ const Contacts: FC = () => {
             if (index !== contacts.length - 1) {
               return (
                 <>
-                  <a className="contacts__social_media_item" href={link}>
+                  <a
+                    className="contacts__social_media_item"
+                    href={link}
+                    key={name}
+                  >
                     {name}
                   </a>
                   <span className="contacts__social_media_separator">/</span>
@@ -44,7 +48,7 @@ const Contacts: FC = () => {
               );
             }
             return (
-              <a className="contacts__social_media_item" href={link}>
+              <a className="contacts__social_media_item" href={link} key={name}>
                 {name}
               </a>
             );

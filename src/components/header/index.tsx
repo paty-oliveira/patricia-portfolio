@@ -4,6 +4,21 @@ import "../../styles/shared.css";
 import { FC } from "react";
 import { useNavigate } from "react-router-dom";
 
+const navigationLinks = [
+  {
+    name: "blog",
+    path: "/",
+  },
+  {
+    name: "work",
+    path: "/",
+  },
+  {
+    name: "projects",
+    path: "/",
+  },
+];
+
 const Header: FC = () => {
   const navigate = useNavigate();
 
@@ -17,17 +32,23 @@ const Header: FC = () => {
         <h5 className="weight-600">Patrícia Oliveira</h5>
       </div>
       <nav className="flex">
-        <a className="nav__item" href="/">
-          blog
-        </a>
-        <span className="nav__item_separator">/</span>
-        <a className="nav__item" href="/">
-          work
-        </a>
-        <span className="nav__item_separator">/</span>
-        <a className="nav__item" href="/">
-          projects
-        </a>
+        {navigationLinks.map(({ name, path }, index) => {
+          if (index !== navigationLinks.length - 1) {
+            return (
+              <>
+                <a className="nav__item" href={path} key={name}>
+                  {name}
+                </a>
+                <span className="nav__item_separator">/</span>
+              </>
+            );
+          }
+          return (
+            <a className="nav__item" href={path} key={name}>
+              {name}
+            </a>
+          );
+        })}
       </nav>
     </header>
   );
