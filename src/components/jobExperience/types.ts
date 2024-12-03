@@ -4,3 +4,9 @@ export interface JobProps {
   jobTitle: string;
   description: string;
 }
+
+export interface JobExperienceProps {
+  title: string;
+  linkText: string;
+  pagePath: string;
+}

@@ -3,10 +3,8 @@ import "./styles.css";
 
 import { FC } from "react";
 
-import { cms } from "@/content";
-import { pagesConfig } from "@/routes/routePages";
-
 import Job from "./Job";
+import { JobExperienceProps } from "./types";
 
 const jobs = [
   {
@@ -25,15 +23,17 @@ const jobs = [
   },
 ];
 
-const JobExperience: FC = () => {
-  const { jobExperience } = cms.homepage;
-
+const JobExperience: FC<JobExperienceProps> = ({
+  title,
+  linkText,
+  pagePath,
+}) => {
   return (
     <section className="container">
       <div className="section__header flex">
-        <h3 className="weight-600">{jobExperience.title}</h3>
-        <a className="page_link" href={pagesConfig.work}>
-          {jobExperience.linkText}
+        <h3 className="weight-600">{title}</h3>
+        <a className="page_link" href={pagePath}>
+          {linkText}
         </a>
       </div>
       <div className="experience__content flex">
