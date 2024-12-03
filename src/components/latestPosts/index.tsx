@@ -28,7 +28,9 @@ const LatestPosts: FC = () => {
     <section className="container">
       <div className="section__header flex">
         <h3 className="weight-600">Latest Posts</h3>
-        <a className="page_link">See all posts</a>
+        <a className="page_link" href="/blog">
+          See all posts
+        </a>
       </div>
       <div className="latest_posts__content">
         {posts.map(({ title, description, key }) => (

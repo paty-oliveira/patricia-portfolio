@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 const navigationLinks = [
   {
     name: "blog",
-    path: "/",
+    path: "/blog",
   },
   {
     name: "work",
