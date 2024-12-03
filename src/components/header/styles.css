@@ -30,6 +30,7 @@ header {
 
 .logo {
   cursor: pointer;
+  transition: opacity 0.4s ease;
 }
 
 .logo:hover {
@@ -41,10 +42,15 @@ header {
 .nav__item {
   text-decoration: underline;
   cursor: pointer;
+  transition:
+    color 0.5s ease,
+    transform 0.5s ease,
+    font-weight 0.5s ease;
 }
 
 .nav__item:hover {
   color: #000;
+  transform: translateY(-3px);
   font-weight: 700;
 }
 
