@@ -1,6 +1,7 @@
 import "../../styles/shared.css";
 
 import React from "react";
+import { Helmet } from "react-helmet";
 
 import Contacts from "@/components/contacts";
 import Footer from "@/components/footer";
@@ -10,6 +11,7 @@ import JobExperience from "@/components/jobExperience";
 import LatestPosts from "@/components/latestPosts";
 import LatestProjects from "@/components/latestProjects";
 import { cms } from "@/content";
+import { seo } from "@/content/seo";
 import { pagesConfig } from "@/routes/routePages";
 
 const Homepage: React.FC = () => {
@@ -21,9 +23,14 @@ const Homepage: React.FC = () => {
     work: workPath,
     projects: projectsPath,
   } = pagesConfig;
+  const { homepage: metadata } = seo;
 
   return (
     <main className="main-layout">
+      <Helmet>
+        <title>{metadata.title}</title>
+        <meta name={metadata.name} content={metadata.content} />
+      </Helmet>
       <Header content={header.content} />
       <Introduction
         title={introduction.title}
