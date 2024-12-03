@@ -5,23 +5,12 @@ import { FC } from "react";
 
 import Card from "../card";
 import { LatestProjectsProps } from "./types";
-const projects = [
-  {
-    title: "Astro Nano",
-    description: "Minimal portfolio and blog",
-    key: "astro_nano",
-  },
-  {
-    title: "Astro Sphere",
-    description: "Portfolio and blog",
-    key: "astro_sphere",
-  },
-];
 
 const LatestProjects: FC<LatestProjectsProps> = ({
   title,
   linkText,
   pagePath,
+  projects,
 }) => {
   return (
     <section className="container">

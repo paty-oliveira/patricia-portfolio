@@ -49,6 +49,7 @@ const Homepage: React.FC = () => {
         title={latestProjects.title}
         linkText={latestProjects.linkText}
         pagePath={projectsPath}
+        projects={latestProjects.projects}
       />
       <Contacts
         title={contacts.title}

@@ -20,6 +20,18 @@ export const cms = {
     latestProjects: {
       title: "Latest Projects",
       linkText: "See all projects",
+      projects: [
+        {
+          title: "Astro Nano",
+          description: "Minimal portfolio and blog",
+          key: "astro_nano",
+        },
+        {
+          title: "Astro Sphere",
+          description: "Portfolio and blog",
+          key: "astro_sphere",
+        },
+      ],
     },
     contacts: {
       title: "Let's Connect",
