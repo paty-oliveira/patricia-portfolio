@@ -1,4 +1,4 @@
-import "./styles.css";
+import "../../styles/shared.css";
 
 import React from "react";
 

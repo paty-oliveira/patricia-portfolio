@@ -1,10 +1,14 @@
+import "../../styles/shared.css";
+
 import { FC } from "react";
+
+import Header from "@/components/header";
 
 const Blog: FC = () => {
   return (
-    <>
-      <p>Blog page</p>
-    </>
+    <main className="main-layout">
+      <Header />
+    </main>
   );
 };
 
