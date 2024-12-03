@@ -10,9 +10,10 @@ import JobExperience from "@/components/jobExperience";
 import LatestPosts from "@/components/latestPosts";
 import LatestProjects from "@/components/latestProjects";
 import { cms } from "@/content";
+import { pagesConfig } from "@/routes/routePages";
 
 const Homepage: React.FC = () => {
-  const { introduction } = cms.homepage;
+  const { introduction, latestPosts } = cms.homepage;
 
   return (
     <main className="main-layout">
@@ -22,7 +23,11 @@ const Homepage: React.FC = () => {
         content={introduction.content}
         photoPath={introduction.photoPath}
       />
-      <LatestPosts />
+      <LatestPosts
+        title={latestPosts.title}
+        linkText={latestPosts.linkText}
+        pagePath={pagesConfig.blog}
+      />
       <JobExperience />
       <LatestProjects />
       <Contacts />

@@ -3,10 +3,8 @@ import "./styles.css";
 
 import { FC } from "react";
 
-import { cms } from "@/content";
-import { pagesConfig } from "@/routes/routePages";
-
 import Card from "../card";
+import { LatestPostsProps } from "./types";
 
 const posts = [
   {
@@ -26,15 +24,13 @@ const posts = [
   },
 ];
 
-const LatestPosts: FC = () => {
-  const { latestPosts } = cms.homepage;
-
+const LatestPosts: FC<LatestPostsProps> = ({ title, linkText, pagePath }) => {
   return (
     <section className="container">
       <div className="section__header flex">
-        <h3 className="weight-600">{latestPosts.title}</h3>
-        <a className="page_link" href={pagesConfig.blog}>
-          {latestPosts.linkText}
+        <h3 className="weight-600">{title}</h3>
+        <a className="page_link" href={pagePath}>
+          {linkText}
         </a>
       </div>
       <div className="latest_posts__content">
