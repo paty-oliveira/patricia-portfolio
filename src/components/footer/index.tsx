@@ -3,7 +3,9 @@ import "./styles.css";
 import { FC } from "react";
 import { FaArrowUp } from "react-icons/fa";
 
-const Footer: FC = () => {
+import { FooterProps } from "./types";
+
+const Footer: FC<FooterProps> = ({ content }) => {
   const currentYear = new Date().getFullYear();
 
   const handleOnClick = () => {
@@ -21,7 +23,9 @@ const Footer: FC = () => {
           <span>Back to top</span>
         </button>
       </div>
-      <p>© {currentYear} | Patrícia Oliveira</p>
+      <p>
+        © {currentYear} | {content}
+      </p>
     </footer>
   );
 };
