@@ -55,6 +55,9 @@
 .page_link {
   text-decoration: underline;
   cursor: pointer;
+  transition:
+    color 0.5s ease,
+    font-weight 0.5s ease;
 }
 
 .page_link:hover {
