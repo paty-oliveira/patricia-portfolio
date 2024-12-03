@@ -13,7 +13,13 @@ import { cms } from "@/content";
 import { pagesConfig } from "@/routes/routePages";
 
 const Homepage: React.FC = () => {
-  const { introduction, latestPosts, jobExperience } = cms.homepage;
+  const { introduction, latestPosts, jobExperience, latestProjects, contacts } =
+    cms.homepage;
+  const {
+    blog: blogPath,
+    work: workPath,
+    projects: projectsPath,
+  } = pagesConfig;
 
   return (
     <main className="main-layout">
@@ -26,15 +32,19 @@ const Homepage: React.FC = () => {
       <LatestPosts
         title={latestPosts.title}
         linkText={latestPosts.linkText}
-        pagePath={pagesConfig.blog}
+        pagePath={blogPath}
       />
       <JobExperience
         title={jobExperience.title}
         linkText={jobExperience.linkText}
-        pagePath={pagesConfig.work}
+        pagePath={workPath}
       />
-      <LatestProjects />
-      <Contacts />
+      <LatestProjects
+        title={latestProjects.title}
+        linkText={latestProjects.linkText}
+        pagePath={projectsPath}
+      />
+      <Contacts title={contacts.title} content={contacts.content} />
       <Footer />
     </main>
   );
