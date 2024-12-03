@@ -3,7 +3,9 @@ import "./styles.css";
 
 import { FC } from "react";
 
-const contacts = [
+import { cms } from "@/content";
+
+const linkContacts = [
   {
     name: "twitter-x",
     link: "#",
@@ -23,17 +25,16 @@ const contacts = [
 ];
 
 const Contacts: FC = () => {
+  const { contacts } = cms.homepage;
+
   return (
     <section>
-      <h3 className="section__header weight-600">Let's Connect</h3>
+      <h3 className="section__header weight-600">{contacts.title}</h3>
       <div className="contacts__content">
-        <p>
-          If you want to get in touch with me about something or just to say hi,
-          reach out on social media or send me an email.
-        </p>
+        <p>{contacts.content}</p>
         <div className="contacts__social_media flex">
-          {contacts.map(({ name, link }, index) => {
-            if (index !== contacts.length - 1) {
+          {linkContacts.map(({ name, link }, index) => {
+            if (index !== linkContacts.length - 1) {
               return (
                 <>
                   <a

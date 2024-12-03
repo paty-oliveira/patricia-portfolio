@@ -3,29 +3,21 @@ import "./styles.css";
 
 import { FC } from "react";
 
+import { cms } from "../../content";
+
 const Introduction: FC = () => {
+  const { introduction } = cms.homepage;
+
   return (
     <section className="container">
       <h3 className="section__header weight-600">
-        Hi, I'm Patrícia&nbsp;<span>👋🏻</span>
+        {introduction.title}&nbsp;<span>👋🏻</span>
       </h3>
       <div className="introduction__content">
         <div className="introduction__text_content">
-          <p>
-            Pellentesque habitant morbi tristique senectus et netus et malesuada
-            fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-            ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-            egestas semper. Aenean ultricies mi vitae est. Mauris placerat
-            eleifend leo.
-          </p>
-          <p>
-            Pellentesque habitant morbi tristique senectus et netus et malesuada
-            fames ac turpis egestas.
-          </p>
-          <p>
-            Pellentesque habitant morbi tristique senectus et netus et malesuada
-            fames ac turpis egestas.
-          </p>
+          {introduction.content.map((text) => (
+            <p>{text}</p>
+          ))}
         </div>
         <div className="introduction__img_content">
           <img className="my-photo" src="/my-photo.jpeg" alt="my photography" />

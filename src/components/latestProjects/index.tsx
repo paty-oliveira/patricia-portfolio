@@ -3,6 +3,7 @@ import "./styles.css";
 
 import { FC } from "react";
 
+import { cms } from "@/content";
 import { pagesConfig } from "@/routes/routePages";
 
 import Card from "../card";
@@ -21,12 +22,14 @@ const projects = [
 ];
 
 const LatestProjects: FC = () => {
+  const { latestProjects } = cms.homepage;
+
   return (
     <section className="container">
       <div className="section__header flex">
-        <h3 className="weight-600">Lastest Projects</h3>
+        <h3 className="weight-600">{latestProjects.title}</h3>
         <a className="page_link" href={pagesConfig.projects}>
-          See all projects
+          {latestProjects.linkText}
         </a>
       </div>
       <div className="latest_projects__content">
