@@ -50,7 +50,11 @@ const Homepage: React.FC = () => {
         linkText={latestProjects.linkText}
         pagePath={projectsPath}
       />
-      <Contacts title={contacts.title} content={contacts.content} />
+      <Contacts
+        title={contacts.title}
+        content={contacts.content}
+        links={contacts.links}
+      />
       <Footer content={footer.content} />
     </main>
   );

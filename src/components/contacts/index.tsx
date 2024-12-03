@@ -5,34 +5,15 @@ import { FC } from "react";
 
 import { ContactsProps } from "./types";
 
-const linkContacts = [
-  {
-    name: "twitter-x",
-    link: "#",
-  },
-  {
-    name: "github",
-    link: "#",
-  },
-  {
-    name: "linkedin",
-    link: "#",
-  },
-  {
-    name: "email",
-    link: "markdowns@gmail.com",
-  },
-];
-
-const Contacts: FC<ContactsProps> = ({ title, content }) => {
+const Contacts: FC<ContactsProps> = ({ title, content, links }) => {
   return (
     <section>
       <h3 className="section__header weight-600">{title}</h3>
       <div className="contacts__content">
         <p>{content}</p>
         <div className="contacts__social_media flex">
-          {linkContacts.map(({ name, link }, index) => {
-            if (index !== linkContacts.length - 1) {
+          {links.map(({ name, link }, index) => {
+            if (index !== links.length - 1) {
               return (
                 <>
                   <a

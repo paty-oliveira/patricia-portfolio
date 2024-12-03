@@ -25,6 +25,24 @@ export const cms = {
       title: "Let's Connect",
       content:
         "If you want to get in touch with me about something or just to say hi, reach out on social media or send me an email.",
+      links: [
+        {
+          name: "twitter-x",
+          link: "#",
+        },
+        {
+          name: "github",
+          link: "#",
+        },
+        {
+          name: "linkedin",
+          link: "#",
+        },
+        {
+          name: "email",
+          link: "markdowns@gmail.com",
+        },
+      ],
     },
     footer: {
       content: "Patrícia Oliveira",
