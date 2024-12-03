@@ -39,11 +39,13 @@ const Homepage: React.FC = () => {
         title={latestPosts.title}
         linkText={latestPosts.linkText}
         pagePath={blogPath}
+        posts={latestPosts.posts}
       />
       <JobExperience
         title={jobExperience.title}
         linkText={jobExperience.linkText}
         pagePath={workPath}
+        jobs={jobExperience.jobs}
       />
       <LatestProjects
         title={latestProjects.title}

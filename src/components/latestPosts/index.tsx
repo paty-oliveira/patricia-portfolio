@@ -6,25 +6,12 @@ import { FC } from "react";
 import Card from "../card";
 import { LatestPostsProps } from "./types";
 
-const posts = [
-  {
-    title: "Getting started",
-    description: "Hit the ground running.",
-    key: "getting_started",
-  },
-  {
-    title: "Blog Collection",
-    description: "How to add posts to your blog.",
-    key: "blog_collection",
-  },
-  {
-    title: "Projects Collection",
-    description: "How to add projects to your portfolio.",
-    key: "projects_collection",
-  },
-];
-
-const LatestPosts: FC<LatestPostsProps> = ({ title, linkText, pagePath }) => {
+const LatestPosts: FC<LatestPostsProps> = ({
+  title,
+  linkText,
+  pagePath,
+  posts,
+}) => {
   return (
     <section className="container">
       <div className="section__header flex">
