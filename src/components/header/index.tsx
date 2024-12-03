@@ -11,7 +11,7 @@ const navigationLinks = [
   },
   {
     name: "work",
-    path: "/",
+    path: "/work",
   },
   {
     name: "projects",

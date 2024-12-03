@@ -27,7 +27,9 @@ const JobExperience: FC = () => {
     <section className="container">
       <div className="section__header flex">
         <h3 className="weight-600">Career Journey</h3>
-        <a className="page_link">See all work</a>
+        <a className="page_link" href="/work">
+          See all work
+        </a>
       </div>
       <div className="experience__content flex">
         {jobs.map(({ companyName, jobTitle, timePeriod, description }) => (
