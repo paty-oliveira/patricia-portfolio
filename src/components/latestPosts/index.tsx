@@ -3,6 +3,8 @@ import "./styles.css";
 
 import { FC } from "react";
 
+import { pagesConfig } from "@/routes/routePages";
+
 import Card from "../card";
 
 const posts = [
@@ -28,7 +30,7 @@ const LatestPosts: FC = () => {
     <section className="container">
       <div className="section__header flex">
         <h3 className="weight-600">Latest Posts</h3>
-        <a className="page_link" href="/blog">
+        <a className="page_link" href={pagesConfig.blog}>
           See all posts
         </a>
       </div>

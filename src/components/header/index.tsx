@@ -4,22 +4,23 @@ import "../../styles/shared.css";
 import { FC } from "react";
 import { useNavigate } from "react-router-dom";
 
-const navigationLinks = [
-  {
-    name: "blog",
-    path: "/blog",
-  },
-  {
-    name: "work",
-    path: "/work",
-  },
-  {
-    name: "projects",
-    path: "/projects",
-  },
-];
+import { pagesConfig } from "@/routes/routePages";
 
 const Header: FC = () => {
+  const navigationLinks = [
+    {
+      name: "blog",
+      path: pagesConfig.blog,
+    },
+    {
+      name: "work",
+      path: pagesConfig.work,
+    },
+    {
+      name: "projects",
+      path: pagesConfig.projects,
+    },
+  ];
   const navigate = useNavigate();
 
   const handleOnClick = () => {

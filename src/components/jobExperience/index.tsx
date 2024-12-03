@@ -3,6 +3,8 @@ import "./styles.css";
 
 import { FC } from "react";
 
+import { pagesConfig } from "@/routes/routePages";
+
 import Job from "./Job";
 
 const jobs = [
@@ -27,7 +29,7 @@ const JobExperience: FC = () => {
     <section className="container">
       <div className="section__header flex">
         <h3 className="weight-600">Career Journey</h3>
-        <a className="page_link" href="/work">
+        <a className="page_link" href={pagesConfig.work}>
           See all work
         </a>
       </div>

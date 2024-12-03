@@ -3,7 +3,7 @@ import Work from "@/pages/work";
 
 import Blog from "../pages/blog";
 import Homepage from "../pages/homepage";
-import { Route } from "./types";
+import { PagePath, Route } from "./types";
 
 export const routePages: Route[] = [
   {
@@ -27,3 +27,10 @@ export const routePages: Route[] = [
     key: "projects",
   },
 ];
+
+export const pagesConfig: PagePath = {
+  homepage: "/",
+  blog: "/blog",
+  work: "/work",
+  projects: "/projects",
+};
