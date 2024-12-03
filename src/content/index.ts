@@ -1,4 +1,10 @@
 export const cms = {
+  header: {
+    content: "Patrícia Oliveira",
+  },
+  footer: {
+    content: "Patrícia Oliveira",
+  },
   homepage: {
     introduction: {
       title: "Hi, I'm Patrícia",
@@ -88,9 +94,6 @@ export const cms = {
           link: "markdowns@gmail.com",
         },
       ],
-    },
-    footer: {
-      content: "Patrícia Oliveira",
     },
   },
 };

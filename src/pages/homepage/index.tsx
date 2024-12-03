@@ -13,14 +13,9 @@ import { cms } from "@/content";
 import { pagesConfig } from "@/routes/routePages";
 
 const Homepage: React.FC = () => {
-  const {
-    introduction,
-    latestPosts,
-    jobExperience,
-    latestProjects,
-    contacts,
-    footer,
-  } = cms.homepage;
+  const { header, footer } = cms;
+  const { introduction, latestPosts, jobExperience, latestProjects, contacts } =
+    cms.homepage;
   const {
     blog: blogPath,
     work: workPath,
@@ -29,7 +24,7 @@ const Homepage: React.FC = () => {
 
   return (
     <main className="main-layout">
-      <Header />
+      <Header content={header.content} />
       <Introduction
         title={introduction.title}
         content={introduction.content}

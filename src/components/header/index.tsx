@@ -6,7 +6,9 @@ import { useNavigate } from "react-router-dom";
 
 import { pagesConfig } from "@/routes/routePages";
 
-const Header: FC = () => {
+import { HeaderProps } from "./types";
+
+const Header: FC<HeaderProps> = ({ content }) => {
   const navigationLinks = [
     {
       name: "blog",
@@ -21,6 +23,7 @@ const Header: FC = () => {
       path: pagesConfig.projects,
     },
   ];
+
   const navigate = useNavigate();
 
   const handleOnClick = () => {
@@ -30,7 +33,7 @@ const Header: FC = () => {
   return (
     <header className="flex">
       <div className="logo" onClick={handleOnClick}>
-        <h5 className="weight-600">Patrícia Oliveira</h5>
+        <h5 className="weight-600">{content}</h5>
       </div>
       <nav className="flex">
         {navigationLinks.map(({ name, path }, index) => {
