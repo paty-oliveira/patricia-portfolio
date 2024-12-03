@@ -1,3 +1,4 @@
+import Projects from "@/pages/projects";
 import Work from "@/pages/work";
 
 import Blog from "../pages/blog";
@@ -19,5 +20,10 @@ export const routePages: Route[] = [
     path: "/work",
     element: <Work />,
     key: "work",
+  },
+  {
+    path: "/projects",
+    element: <Projects />,
+    key: "projects",
   },
 ];

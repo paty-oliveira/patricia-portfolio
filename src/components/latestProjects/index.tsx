@@ -23,7 +23,9 @@ const LatestProjects: FC = () => {
     <section className="container">
       <div className="section__header flex">
         <h3 className="weight-600">Lastest Projects</h3>
-        <a className="page_link">See all projects</a>
+        <a className="page_link" href="/projects">
+          See all projects
+        </a>
       </div>
       <div className="latest_projects__content">
         {projects.map(({ title, description, key }) => (
