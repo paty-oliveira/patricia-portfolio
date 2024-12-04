@@ -99,7 +99,7 @@ export const cms = {
       ],
     },
   },
-  blog: {
+  blogPage: {
     title: "Blog",
     posts: [
       {
@@ -134,7 +134,7 @@ export const cms = {
       },
     ],
   },
-  work: {
+  workPage: {
     title: "Work",
     jobs: [
       {

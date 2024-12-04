@@ -10,7 +10,7 @@ import { cms } from "@/content";
 import { seo } from "@/content/seo";
 
 const Work: FC = () => {
-  const { header, work } = cms;
+  const { header, workPage } = cms;
   const { work: metadata } = seo;
 
   return (
@@ -21,9 +21,9 @@ const Work: FC = () => {
       </Helmet>
       <Header content={header.content} />
       <section>
-        <h3 className="section__header weight-600">{work.title}</h3>
+        <h3 className="section__header weight-600">{workPage.title}</h3>
         <div className="work__content">
-          {work.jobs.map(
+          {workPage.jobs.map(
             ({ companyName, jobTitle, timePeriod, description }) => (
               <Job
                 companyName={companyName}

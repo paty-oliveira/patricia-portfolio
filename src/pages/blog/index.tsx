@@ -11,10 +11,10 @@ import { seo } from "@/content/seo";
 import { groupPostsByYear, sortByYearDesc } from "./utils";
 
 const Blog: FC = () => {
-  const { header, blog } = cms;
+  const { header, blogPage } = cms;
   const { blog: metadata } = seo;
 
-  const postsByYear = groupPostsByYear(blog.posts);
+  const postsByYear = groupPostsByYear(blogPage.posts);
   const postsSortedByYear = sortByYearDesc(postsByYear);
 
   return (
@@ -25,7 +25,7 @@ const Blog: FC = () => {
       </Helmet>
       <Header content={header.content} />
       <section>
-        <h3 className="section__header weight-600">{blog.title}</h3>
+        <h3 className="section__header weight-600">{blogPage.title}</h3>
         <Posts posts={postsSortedByYear} />
       </section>
     </main>
