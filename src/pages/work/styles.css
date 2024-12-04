@@ -1,0 +1,6 @@
+.work__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+  margin-bottom: 2rem;
+}

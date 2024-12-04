@@ -134,4 +134,23 @@ export const cms = {
       },
     ],
   },
+  work: {
+    title: "Work",
+    jobs: [
+      {
+        companyName: "Google",
+        jobTitle: "Staff Software Engineer",
+        timePeriod: "November 2022 - Current",
+        description:
+          "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+      },
+      {
+        companyName: "Microsoft",
+        jobTitle: "Software Engineer",
+        timePeriod: "November 2000 - November 2022",
+        description:
+          "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+      },
+    ],
+  },
 };
