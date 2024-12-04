@@ -25,3 +25,21 @@ export const groupPostsByYear = (
 
   return groupedByYear;
 };
+
+export const sortByYearDesc = (
+  posts: Record<
+    string,
+    {
+      title: string;
+      description: string;
+      link: string;
+      publishedTimestamp: number;
+    }[]
+  >
+) => {
+  return new Map(
+    Object.keys(posts)
+      .sort((a, b) => Number(b) - Number(a))
+      .map((year) => [year, posts[year]])
+  );
+};

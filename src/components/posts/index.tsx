@@ -1,3 +1,4 @@
+import "../../styles/shared.css";
 import "./styles.css";
 
 import { FC } from "react";
@@ -13,22 +14,22 @@ const Posts: FC<PostsProps> = ({ posts }) => {
 
   return (
     <div className="blog__content">
-      {Object.entries(posts).map(([year, post]) => {
-        return (
-          <>
-            <h5 className="blog__content_year">{year}</h5>
-            <div className="blog__content_posts">
-              {post.map(({ title, description, link }) => (
+      {[...posts.keys()].map((year) => (
+        <>
+          <h5 className="blog__content_year weight-600">{year}</h5>
+          <div className="blog__content_posts">
+            {posts
+              .get(year)
+              ?.map(({ title, description, link }) => (
                 <Card
                   title={title}
                   description={description}
                   onClick={() => handleOnClick(link)}
                 />
               ))}
-            </div>
-          </>
-        );
-      })}
+          </div>
+        </>
+      ))}
     </div>
   );
 };

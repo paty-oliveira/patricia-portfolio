@@ -1,5 +1,5 @@
 export interface PostsProps {
-  posts: Record<
+  posts: Map<
     string,
     {
       title: string;

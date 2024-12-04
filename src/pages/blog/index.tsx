@@ -1,5 +1,4 @@
 import "../../styles/shared.css";
-import "./styles.css";
 
 import { FC } from "react";
 import { Helmet } from "react-helmet";
@@ -9,11 +8,14 @@ import Posts from "@/components/posts";
 import { cms } from "@/content";
 import { seo } from "@/content/seo";
 
-import { groupPostsByYear } from "./utils";
+import { groupPostsByYear, sortByYearDesc } from "./utils";
 
 const Blog: FC = () => {
   const { header, blog } = cms;
   const { blog: metadata } = seo;
+
+  const postsByYear = groupPostsByYear(blog.posts);
+  const postsSortedByYear = sortByYearDesc(postsByYear);
 
   return (
     <main className="main-layout">
@@ -24,7 +26,7 @@ const Blog: FC = () => {
       <Header content={header.content} />
       <section>
         <h3 className="section__header weight-600">{blog.title}</h3>
-        <Posts posts={groupPostsByYear(blog.posts)} />
+        <Posts posts={postsSortedByYear} />
       </section>
     </main>
   );
