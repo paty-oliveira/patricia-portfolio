@@ -64,14 +64,14 @@ export const cms = {
       linkText: "See all projects",
       projects: [
         {
+          id: "astro-nano",
           title: "Astro Nano",
           description: "Minimal portfolio and blog",
-          key: "astro_nano",
         },
         {
+          id: "astro-sphere",
           title: "Astro Sphere",
           description: "Portfolio and blog",
-          key: "astro_sphere",
         },
       ],
     },
@@ -157,14 +157,14 @@ export const cms = {
     title: "Projects",
     projects: [
       {
+        id: "astro-nano",
         title: "Astro Nano",
         description: "Minimal portfolio and blog",
-        key: "astro_nano",
       },
       {
+        id: "astro-sphere",
         title: "Astro Sphere",
         description: "Portfolio and blog",
-        key: "astro_sphere",
       },
     ],
   },

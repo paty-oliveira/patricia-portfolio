@@ -1,6 +1,6 @@
 import Blog from "@/pages/blog";
 import Homepage from "@/pages/homepage";
-import Project from "@/pages/project";
+import Project from "@/pages/projectId";
 import Projects from "@/pages/projects";
 import Work from "@/pages/work";
 
@@ -28,7 +28,7 @@ export const routePages: Route[] = [
     key: "projects",
   },
   {
-    path: "/projects/:projectName",
+    path: "/projects/:projectId",
     element: <Project />,
     key: "project_name",
   },

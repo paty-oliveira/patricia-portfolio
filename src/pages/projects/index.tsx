@@ -3,6 +3,7 @@ import "./styles.css";
 
 import { FC } from "react";
 import { Helmet } from "react-helmet";
+import { useNavigate } from "react-router-dom";
 
 import Card from "@/components/card";
 import Header from "@/components/header";
@@ -10,8 +11,14 @@ import { cms } from "@/content";
 import { seo } from "@/content/seo";
 
 const Projects: FC = () => {
+  const navigate = useNavigate();
+
   const { header, projectsPage } = cms;
   const { projects: metadata } = seo;
+
+  const handleOnClick = (projectId: string) => {
+    navigate(`/projects/${projectId}`);
+  };
 
   return (
     <main className="main-layout">
@@ -23,14 +30,12 @@ const Projects: FC = () => {
       <section>
         <h3 className="section__header weight-600">{projectsPage.title}</h3>
         <div className="projects__content">
-          {projectsPage.projects.map(({ title, description, key }) => (
+          {projectsPage.projects.map(({ title, description, id }) => (
             <Card
-              key={key}
+              key={id}
               title={title}
               description={description}
-              onClick={() => {
-                console.log("clicking");
-              }}
+              onClick={() => handleOnClick(id)}
             />
           ))}
         </div>

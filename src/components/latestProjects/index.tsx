@@ -2,6 +2,7 @@ import "../../styles/shared.css";
 import "./styles.css";
 
 import { FC } from "react";
+import { useNavigate } from "react-router-dom";
 
 import Card from "../card";
 import { LatestProjectsProps } from "./types";
@@ -12,6 +13,12 @@ const LatestProjects: FC<LatestProjectsProps> = ({
   pagePath,
   projects,
 }) => {
+  const navigate = useNavigate();
+
+  const handleOnClick = (projectId: string) => {
+    navigate(`/projects/${projectId}`);
+  };
+
   return (
     <section className="container">
       <div className="section__header flex">
@@ -21,12 +28,12 @@ const LatestProjects: FC<LatestProjectsProps> = ({
         </a>
       </div>
       <div className="latest_projects__content">
-        {projects.map(({ title, description, key }) => (
+        {projects.map(({ title, description, id }) => (
           <Card
-            key={key}
+            key={id}
             title={title}
             description={description}
-            onClick={() => {}}
+            onClick={() => handleOnClick(id)}
           />
         ))}
       </div>
