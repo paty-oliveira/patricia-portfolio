@@ -5,10 +5,11 @@ import { FC } from "react";
 import { Helmet } from "react-helmet";
 
 import Header from "@/components/header";
+import Posts from "@/components/posts";
 import { cms } from "@/content";
 import { seo } from "@/content/seo";
 
-import Posts from "./Posts";
+import { groupPostsByYear } from "./utils";
 
 const Blog: FC = () => {
   const { header, blog } = cms;
@@ -23,7 +24,7 @@ const Blog: FC = () => {
       <Header content={header.content} />
       <section>
         <h3 className="section__header weight-600">{blog.title}</h3>
-        <Posts posts={blog.posts} />
+        <Posts posts={groupPostsByYear(blog.posts)} />
       </section>
     </main>
   );
