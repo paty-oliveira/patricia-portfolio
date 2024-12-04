@@ -153,4 +153,19 @@ export const cms = {
       },
     ],
   },
+  projectsPage: {
+    title: "Projects",
+    projects: [
+      {
+        title: "Astro Nano",
+        description: "Minimal portfolio and blog",
+        key: "astro_nano",
+      },
+      {
+        title: "Astro Sphere",
+        description: "Portfolio and blog",
+        key: "astro_sphere",
+      },
+    ],
+  },
 };

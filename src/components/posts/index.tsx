@@ -20,8 +20,9 @@ const Posts: FC<PostsProps> = ({ posts }) => {
           <div className="blog__content_posts">
             {posts
               .get(year)
-              ?.map(({ title, description, link }) => (
+              ?.map(({ title, description, link }, index) => (
                 <Card
+                  key={index}
                   title={title}
                   description={description}
                   onClick={() => handleOnClick(link)}
