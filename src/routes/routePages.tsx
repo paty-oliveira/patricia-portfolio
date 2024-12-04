@@ -1,8 +1,9 @@
+import Blog from "@/pages/blog";
+import Homepage from "@/pages/homepage";
+import Project from "@/pages/project";
 import Projects from "@/pages/projects";
 import Work from "@/pages/work";
 
-import Blog from "../pages/blog";
-import Homepage from "../pages/homepage";
 import { PagePath, Route } from "./types";
 
 export const routePages: Route[] = [
@@ -25,6 +26,11 @@ export const routePages: Route[] = [
     path: "/projects",
     element: <Projects />,
     key: "projects",
+  },
+  {
+    path: "/projects/:projectName",
+    element: <Project />,
+    key: "project_name",
   },
 ];
 

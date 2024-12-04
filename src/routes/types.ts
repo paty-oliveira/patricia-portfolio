@@ -1,6 +1,6 @@
 type Page = "homepage" | "blog" | "work" | "projects";
 
-type Path = "/" | "/blog" | "/work" | "/projects";
+type Path = "/" | "/blog" | "/work" | "/projects" | "/projects/:projectName";
 
 export type PagePath = Record<Page, Path>;
 
