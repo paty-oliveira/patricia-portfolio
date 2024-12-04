@@ -3,7 +3,8 @@ import "./styles.css";
 
 import { FC } from "react";
 
-import Job from "./Job";
+import Job from "@/components/job";
+
 import { JobExperienceProps } from "./types";
 
 const JobExperience: FC<JobExperienceProps> = ({
