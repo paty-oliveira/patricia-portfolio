@@ -4,10 +4,10 @@ import { FC } from "react";
 
 import { CardProps } from "./types";
 
-const Card: FC<CardProps> = ({ title, description }) => {
+const Card: FC<CardProps> = ({ title, description, onClick }) => {
   return (
     <div className="card">
-      <div className="card__content">
+      <div className="card__content" onClick={onClick}>
         <h6>{title}</h6>
         <p>{description}</p>
       </div>

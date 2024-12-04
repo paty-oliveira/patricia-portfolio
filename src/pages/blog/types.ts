@@ -1,7 +1,4 @@
-export interface LatestPostsProps {
-  title: string;
-  linkText: string;
-  pagePath: string;
+export interface PostsProps {
   posts: {
     title: string;
     description: string;

@@ -12,6 +12,10 @@ const LatestPosts: FC<LatestPostsProps> = ({
   pagePath,
   posts,
 }) => {
+  const handleOnClick = (link: string) => {
+    window.open(link, "_blank", "noreferrer,noopener");
+  };
+
   return (
     <section className="container">
       <div className="section__header flex">
@@ -21,8 +25,13 @@ const LatestPosts: FC<LatestPostsProps> = ({
         </a>
       </div>
       <div className="latest_posts__content">
-        {posts.map(({ title, description, key }) => (
-          <Card key={key} title={title} description={description} />
+        {posts.map(({ title, description, link }, index) => (
+          <Card
+            key={index}
+            title={title}
+            description={description}
+            onClick={() => handleOnClick(link)}
+          />
         ))}
       </div>
     </section>

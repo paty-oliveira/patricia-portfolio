@@ -22,17 +22,20 @@ export const cms = {
         {
           title: "Getting started",
           description: "Hit the ground running.",
-          key: "getting_started",
+          link: "https://patriciiaoliveira.substack.com/p/python-for-fundamental-analysis",
+          publishedTimestamp: 1730717805,
         },
         {
           title: "Blog Collection",
           description: "How to add posts to your blog.",
-          key: "blog_collection",
+          link: "https://patriciiaoliveira.substack.com/p/python-for-fundamental-analysis",
+          publishedTimestamp: 1733309805,
         },
         {
           title: "Projects Collection",
           description: "How to add projects to your portfolio.",
-          key: "projects_collection",
+          link: "https://patriciiaoliveira.substack.com/p/python-for-fundamental-analysis",
+          publishedTimestamp: 1733482605,
         },
       ],
     },
@@ -95,5 +98,40 @@ export const cms = {
         },
       ],
     },
+  },
+  blog: {
+    title: "Blog",
+    posts: [
+      {
+        title: "Getting started",
+        description: "Hit the ground running.",
+        link: "https://patriciiaoliveira.substack.com/p/python-for-fundamental-analysis",
+        publishedTimestamp: 1730717805,
+      },
+      {
+        title: "Blog Collection",
+        description: "How to add posts to your blog.",
+        link: "https://patriciiaoliveira.substack.com/p/python-for-fundamental-analysis",
+        publishedTimestamp: 1733309805,
+      },
+      {
+        title: "Projects Collection",
+        description: "How to add projects to your portfolio.",
+        link: "https://patriciiaoliveira.substack.com/p/python-for-fundamental-analysis",
+        publishedTimestamp: 1733482605,
+      },
+      {
+        title: "Year sorting example",
+        description: "Nano groups posts by year.",
+        link: "https://patriciiaoliveira.substack.com/p/python-for-fundamental-analysis",
+        publishedTimestamp: 1693994205,
+      },
+      {
+        title: "Draft example",
+        description: "Sorting draft flag to true to hide this posts.",
+        link: "https://patriciiaoliveira.substack.com/p/python-for-fundamental-analysis",
+        publishedTimestamp: 1649843805,
+      },
+    ],
   },
 };

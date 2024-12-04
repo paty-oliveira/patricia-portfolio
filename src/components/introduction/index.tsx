@@ -8,7 +8,7 @@ import { IntroductionProps } from "./types";
 const Introduction: FC<IntroductionProps> = ({ title, content, photoPath }) => {
   return (
     <section className="container">
-      <h3 className="introduction__header weight-600">
+      <h3 className="section__header introduction__header weight-600">
         {title}&nbsp;<span>👋🏻</span>
       </h3>
       <div className="introduction__content">
