@@ -22,7 +22,12 @@ const LatestProjects: FC<LatestProjectsProps> = ({
       </div>
       <div className="latest_projects__content">
         {projects.map(({ title, description, key }) => (
-          <Card key={key} title={title} description={description} />
+          <Card
+            key={key}
+            title={title}
+            description={description}
+            onClick={() => {}}
+          />
         ))}
       </div>
     </section>
