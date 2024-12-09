@@ -1,6 +1,11 @@
 .work__content {
   display: flex;
   flex-direction: column;
-  gap: 3.75rem;
+}
+
+.work__content > *:not(:last-child) {
   margin-bottom: 2rem;
+
+  padding-bottom: 2rem;
+  border-bottom: 1px dotted black;
 }
