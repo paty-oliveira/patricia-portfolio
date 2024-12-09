@@ -1,3 +1,4 @@
+import "../../styles/shared.css";
 import "./styles.css";
 
 import { FC } from "react";
@@ -18,7 +19,7 @@ const Footer: FC<FooterProps> = ({ content }) => {
   return (
     <footer>
       <div className="footer__button_container">
-        <button className="footer__button" onClick={handleOnClick}>
+        <button className="button" onClick={handleOnClick}>
           <FaArrowUp />
           <span>Back to top</span>
         </button>

@@ -1,3 +1,5 @@
+import { astroNano, astroSphere } from "./markdown";
+
 export const cms = {
   header: {
     content: "Patrícia Oliveira",
@@ -160,11 +162,13 @@ export const cms = {
         id: "astro-nano",
         title: "Astro Nano",
         description: "Minimal portfolio and blog",
+        content: astroNano,
       },
       {
         id: "astro-sphere",
         title: "Astro Sphere",
         description: "Portfolio and blog",
+        content: astroSphere,
       },
     ],
   },
