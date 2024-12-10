@@ -4,7 +4,6 @@ import "./styles.css";
 import { FC } from "react";
 import { Helmet } from "react-helmet";
 import { FaAngleLeft } from "react-icons/fa6";
-import Markdown from "react-markdown";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
@@ -46,9 +45,7 @@ const Project: FC = () => {
           <p>{project?.title}</p>
           <p>Quick links</p>
         </div>
-        <div className="projects__content">
-          <Markdown>{project.content}</Markdown>
-        </div>
+        <div className="projects__content"></div>
       </section>
     </main>
   );
