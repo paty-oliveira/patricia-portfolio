@@ -35,7 +35,8 @@ export const globalCssConfig: GlobalStyleObject = {
   },
   a: {
     display: "block",
-    textDecoration: "none",
+    textDecoration: "underline",
+    cursor: "pointer",
     color: "inherit",
     font: "inherit",
   },
