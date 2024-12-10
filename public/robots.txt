@@ -1,0 +1,7 @@
+
+User-agent: *
+Disallow: /static/  # Prevent crawling static files (CSS, JS, etc.)
+Allow: /
+
+# Sitemap location
+Sitemap: https://patricia-portfolio.netlify.app/sitemap.xml
