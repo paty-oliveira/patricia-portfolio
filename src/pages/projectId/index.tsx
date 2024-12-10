@@ -74,13 +74,23 @@ const Project: FC = () => {
           <div className="projects__header_links">
             {project.demoLink ? (
               <>
-                <a href={project.demoLink} className="link__item">
+                <a
+                  href={project.demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link__item"
+                >
                   demo
                 </a>
                 <span className="link__item_separator">/</span>
               </>
             ) : null}
-            <a href={project.repoLink} className="link__item">
+            <a
+              href={project.repoLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link__item"
+            >
               repo
             </a>
           </div>
