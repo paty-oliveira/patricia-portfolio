@@ -4,12 +4,14 @@ import "./styles.css";
 import { FC } from "react";
 import { Helmet } from "react-helmet";
 import { FaAngleLeft } from "react-icons/fa6";
+import ReactMarkdown from "react-markdown";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 import Header from "@/components/header";
 import { cms } from "@/content";
 import { seo } from "@/content/seo";
+import { useProjectDocs } from "@/hooks/useProjectDocs";
 
 const Project: FC = () => {
   const { projectId } = useParams();
@@ -17,20 +19,46 @@ const Project: FC = () => {
 
   const { header, projectsPage } = cms;
   const { projects: metadata } = seo;
-
   const project = projectsPage.projects.find(
     (project) => project.id === projectId
+  );
+
+  const { projectDocs, error } = useProjectDocs(
+    project?.repoOwner || "",
+    project?.repoName || ""
   );
 
   const handleOnClick = () => {
     navigate(-1);
   };
 
+  if (!project) {
+    return (
+      <main className="main-layout">
+        <Helmet>
+          <title>{metadata.title}</title>
+        </Helmet>
+        <Header content={header.content} />
+        <section>
+          <div className="projects__button__container">
+            <button className="button" onClick={handleOnClick}>
+              <FaAngleLeft />
+              <span>Back to projects</span>
+            </button>
+          </div>
+          <div className="projects__content">
+            <p>No project found!</p>
+          </div>
+        </section>
+      </main>
+    );
+  }
+
   return (
     <main className="main-layout">
       <Helmet>
         <title>{metadata.title}</title>
-        <meta name={metadata.name} content={project?.description} />
+        <meta name={metadata.name} content={project.description} />
       </Helmet>
       <Header content={header.content} />
       <section>
@@ -42,10 +70,12 @@ const Project: FC = () => {
         </div>
         <div>
           <p>Date Here</p>
-          <p>{project?.title}</p>
+          <p>{project.title}</p>
           <p>Quick links</p>
         </div>
-        <div className="projects__content"></div>
+        <div className="projects__content">
+          {error.length === 0 && <ReactMarkdown>{projectDocs}</ReactMarkdown>}
+        </div>
       </section>
     </main>
   );
