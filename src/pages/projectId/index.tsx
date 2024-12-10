@@ -68,10 +68,22 @@ const Project: FC = () => {
             <span>Back to projects</span>
           </button>
         </div>
-        <div>
-          <p>Date Here</p>
-          <p>{project.title}</p>
-          <p>Quick links</p>
+        <div className="projects__header">
+          <p>{project.publicationDate}</p>
+          <h3>{project.title}</h3>
+          <div className="projects__header_links">
+            {project.demoLink ? (
+              <>
+                <a href={project.demoLink} className="link__item">
+                  demo
+                </a>
+                <span className="link__item_separator">/</span>
+              </>
+            ) : null}
+            <a href={project.repoLink} className="link__item">
+              repo
+            </a>
+          </div>
         </div>
         <div className="projects__content">
           {error.length === 0 && <ReactMarkdown>{projectDocs}</ReactMarkdown>}

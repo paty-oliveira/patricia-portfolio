@@ -40,17 +40,17 @@ const Header: FC<HeaderProps> = ({ content }) => {
           if (index !== navigationLinks.length - 1) {
             return (
               <>
-                <a className="nav__item" href={path} key={name}>
+                <a className="link__item" href={path} key={name}>
                   {name}
                 </a>
-                <span key={`${name}-span`} className="nav__item_separator">
+                <span key={`${name}-span`} className="link__item_separator">
                   /
                 </span>
               </>
             );
           }
           return (
-            <a className="nav__item" href={path} key={name}>
+            <a className="link__item" href={path} key={name}>
               {name}
             </a>
           );

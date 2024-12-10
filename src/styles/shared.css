@@ -93,3 +93,22 @@
   font-weight: 700;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
+
+.link__item {
+  text-decoration: underline;
+  cursor: pointer;
+  transition:
+    color 0.5s ease,
+    transform 0.5s ease,
+    font-weight 0.5s ease;
+}
+
+.link__item:hover {
+  color: #000;
+  transform: translateY(-3px);
+  font-weight: 700;
+}
+
+.link__item_separator {
+  padding: 0 6px;
+}

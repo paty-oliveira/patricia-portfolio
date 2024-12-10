@@ -2,6 +2,14 @@
   margin-bottom: 4rem;
 }
 
+.projects__header > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.projects__header_links {
+  display: flex;
+}
+
 .projects__content {
   margin-top: 3rem;
 }
