@@ -12,14 +12,16 @@ const Job: FC<JobProps> = ({
   description,
 }) => {
   return (
-    <div>
+    <div className="container">
       <div className="work_card__header">
         <p>{timePeriod}</p>
-        <h6 className="weight-600">{companyName}</h6>
+        <h5 className="weight-600">{companyName}</h5>
         <p>{jobTitle}</p>
       </div>
       <div className="work_card__content">
-        <p>{description}</p>
+        {description.map((text) => (
+          <p>{text}</p>
+        ))}
       </div>
     </div>
   );

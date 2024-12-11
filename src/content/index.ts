@@ -106,18 +106,49 @@ export const cms = {
     title: "Work",
     jobs: [
       {
-        companyName: "Google",
-        jobTitle: "Staff Software Engineer",
-        timePeriod: "November 2022 - Current",
-        description:
-          "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+        companyName: "Mindera",
+        jobTitle: "Data Engineer",
+        timePeriod: "December 2024 - Current",
+        description: [
+          `Currently building a scalable data platform for Dunelm to unify and process data, enabling better decision-making.`,
+          `SQL, Python, Terraform, dbt, Snowflake, AWS, and GitHub.`,
+        ],
       },
       {
-        companyName: "Microsoft",
-        jobTitle: "Software Engineer",
-        timePeriod: "November 2000 - November 2022",
-        description:
-          "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+        companyName: "Mindera",
+        jobTitle: "Frontend Engineer",
+        timePeriod: "June 2023 - November 2024",
+        description: [
+          `Contributed to the rebranding of core features for FanDuel Racing's desktop and mobile products, ensuring a modern and consistent user experience across platforms.`,
+          `- Collaborated on the development of scalable front-end solutions, enhancing the platform's usability and visual appeal.`,
+          `- Supported the creation and management of reusable components and content structures to streamline development workflows.`,
+          `React, React Native, NextJS, Typescript, Javascript, GraphQL, Styled Components, Storybook, Storyblok, and GitHub.`,
+        ],
+      },
+      {
+        companyName: "Mindera",
+        jobTitle: "Data Engineer",
+        timePeriod: "September 2021 - May 2023",
+        description: [
+          `Contributed to the development of an ELT pipeline that unified Dunelm's operational and sales data, enabling data-driven decision-making and shaping the company's business strategies.`,
+          `- Assisted in building a Data Lake to centralize all operational and sales data.`,
+          `- Promoted Data Warehouse modeling using Kimball's methodologies to enhance analytical capabilities.`,
+          `- Conducted exploratory data analysis to understand business processes and translate them into well-structured data models.`,
+          `- Advocated for a design-quality mindset by introducing Test-Driven Development (TDD) techniques for data model development.`,
+          `- Played a key role in implementing continuous integration/continuous deployment (CI/CD) pipelines to ensure a high-quality, reliable data system.`,
+          `SQL, Python, Bash, dbt, Snowflake, AWS, Terraform, and GitLab.`,
+        ],
+      },
+      {
+        companyName: "Critical TechWorks",
+        jobTitle: "Data Engineer",
+        timePeriod: "April 2020 - September 2021",
+        description: [
+          `Contributed to the development of a robust ETL pipeline to unify data across BMW's systems, enabling data-driven decision-making and empowering the organization to adopt a data-centric approach.`,
+          `- Played a key role in building and maintaining the infrastructure for scalable and efficient data pipelines.`,
+          `- Ensured high-quality data models through rigorous testing and optimization practices.`,
+          `SQL, Python, Terraform, Apache Spark/PySpark, AWS, and Bitbucket.`,
+        ],
       },
     ],
   },

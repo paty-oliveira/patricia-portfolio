@@ -6,3 +6,12 @@
   color: black;
   text-align: justify;
 }
+
+.work_card__content > p:is(:first-child) {
+  margin-bottom: 0.5rem;
+}
+
+.work_card__content > p:is(:last-child) {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
