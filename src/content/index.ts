@@ -10,9 +10,11 @@ export const cms = {
       title: "Hi, I'm Patrícia",
       photoPath: "/my-photo.jpeg",
       content: [
-        `Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.Donec eu libero sit amet quam egestas semper.Aenean ultricies mi vitae est.Mauris placerat eleifend leo.`,
-        `Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.`,
-        `Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.`,
+        `I am a Data Engineer with 5 years of experience, specializing in building reliable and scalable data solutions driven by Test-Driven Development (TDD).`,
+        `Currently, I work at Mindera, focusing on efficient data pipelines using modern tools like dbt and Snowflake.`,
+        `Previously, as a Frontend Engineer, I built interfaces with React, React Native, TypeScript, and GraphQL.`,
+        `I also mentor students in a Data Engineering course, teaching dbt and analytics engineering concepts.`,
+        `From Portugal to the world, I am ready to contribute to impactful projects wherever they are.`,
       ],
     },
     latestPosts: {
