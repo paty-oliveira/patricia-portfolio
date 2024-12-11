@@ -75,19 +75,19 @@ export const cms = {
       links: [
         {
           name: "twitter-x",
-          link: "#",
+          link: "https://x.com/AnaPatrciaOliv5",
         },
         {
           name: "github",
-          link: "#",
+          link: "https://github.com/paty-oliveira",
         },
         {
           name: "linkedin",
-          link: "#",
+          link: "https://www.linkedin.com/in/ana-patr%C3%ADcia-oliveira/",
         },
         {
           name: "email",
-          link: "markdowns@gmail.com",
+          link: "dev.patricia.oliveira@gmail.com",
         },
       ],
     },

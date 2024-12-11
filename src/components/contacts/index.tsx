@@ -19,6 +19,8 @@ const Contacts: FC<ContactsProps> = ({ title, content, links }) => {
                   <a
                     className="contacts__social_media_item"
                     href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     key={name}
                   >
                     {name}
@@ -33,7 +35,13 @@ const Contacts: FC<ContactsProps> = ({ title, content, links }) => {
               );
             }
             return (
-              <a className="contacts__social_media_item" href={link} key={name}>
+              <a
+                className="contacts__social_media_item"
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={name}
+              >
                 {name}
               </a>
             );
