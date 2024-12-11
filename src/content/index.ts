@@ -22,22 +22,11 @@ export const cms = {
       linkText: "See all posts",
       posts: [
         {
-          title: "Getting started",
-          description: "Hit the ground running.",
+          title: "Performing Fundamental Analysis of a Company using Python",
+          description:
+            "Automating Financial Analysis with Python: Tools and Techniques",
           link: "https://patriciiaoliveira.substack.com/p/python-for-fundamental-analysis",
-          publishedTimestamp: 1730717805,
-        },
-        {
-          title: "Blog Collection",
-          description: "How to add posts to your blog.",
-          link: "https://patriciiaoliveira.substack.com/p/python-for-fundamental-analysis",
-          publishedTimestamp: 1733309805,
-        },
-        {
-          title: "Projects Collection",
-          description: "How to add projects to your portfolio.",
-          link: "https://patriciiaoliveira.substack.com/p/python-for-fundamental-analysis",
-          publishedTimestamp: 1733482605,
+          publishedTimestamp: 1727517600,
         },
       ],
     },
