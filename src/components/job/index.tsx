@@ -12,7 +12,7 @@ const Job: FC<JobProps> = ({
   description,
 }) => {
   return (
-    <div className="container">
+    <div>
       <div className="work_card__header">
         <p>{timePeriod}</p>
         <h5 className="weight-600">{companyName}</h5>

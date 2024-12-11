@@ -20,7 +20,7 @@ const Work: FC = () => {
         <meta name={metadata.name} content={metadata.content} />
       </Helmet>
       <Header content={header.content} />
-      <section>
+      <section className="container">
         <h3 className="section__header weight-600">{workPage.title}</h3>
         <div className="work__content">
           {workPage.jobs.map(

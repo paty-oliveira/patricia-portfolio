@@ -6,6 +6,6 @@ export interface JobExperienceProps {
     companyName: string;
     jobTitle: string;
     timePeriod: string;
-    description: string;
+    description: string[];
   }[];
 }

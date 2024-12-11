@@ -35,18 +35,20 @@ export const cms = {
       linkText: "See all work",
       jobs: [
         {
-          companyName: "Google",
-          jobTitle: "Staff Software Engineer",
-          timePeriod: "November 2022 - Current",
-          description:
-            "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+          companyName: "Mindera",
+          jobTitle: "Data Engineer",
+          timePeriod: "December 2024 - Current",
+          description: [
+            `Currently building a scalable data platform for Dunelm to unify and process data, enabling better decision-making.`,
+          ],
         },
         {
-          companyName: "Microsoft",
-          jobTitle: "Software Engineer",
-          timePeriod: "November 2000 - November 2022",
-          description:
-            "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+          companyName: "Mindera",
+          jobTitle: "Frontend Engineer",
+          timePeriod: "June 2023 - November 2024",
+          description: [
+            `Contributed to the rebranding of core features for FanDuel Racing's desktop and mobile products, ensuring a modern and consistent user experience across platforms.`,
+          ],
         },
       ],
     },
