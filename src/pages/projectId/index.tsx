@@ -41,7 +41,7 @@ const Project: FC = () => {
           <title>{metadata.title}</title>
         </Helmet>
         <Header content={header.content} />
-        <section>
+        <section className="projects__section">
           <div className="projects__button__container">
             <button className="button" onClick={handleOnClick}>
               <FaAngleLeft />
@@ -63,7 +63,7 @@ const Project: FC = () => {
         <meta name={metadata.name} content={project.description} />
       </Helmet>
       <Header content={header.content} />
-      <section>
+      <section className="projects__section">
         <div className="projects__button__container">
           <button className="button" onClick={handleOnClick}>
             <FaAngleLeft />

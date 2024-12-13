@@ -1,4 +1,5 @@
 import "../../styles/shared.css";
+import "./styles.css";
 
 import { FC } from "react";
 import { Helmet } from "react-helmet";
@@ -25,7 +26,7 @@ const Blog: FC = () => {
         <meta name={metadata.name} content={metadata.content} />
       </Helmet>
       <Header content={header.content} />
-      <section>
+      <section className="blog__section">
         <h3 className="section__header weight-600">{blogPage.title}</h3>
         <Posts posts={postsSortedByYear} />
       </section>

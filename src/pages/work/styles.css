@@ -1,3 +1,7 @@
+.work__section {
+  margin-bottom: 150px;
+}
+
 .work__content {
   display: flex;
   flex-direction: column;

@@ -7,7 +7,7 @@ import { ContactsProps } from "./types";
 
 const Contacts: FC<ContactsProps> = ({ title, content, links }) => {
   return (
-    <section>
+    <section className="contacts__section">
       <h3 className="section__header weight-600">{title}</h3>
       <div className="contacts__content">
         <p>{content}</p>
