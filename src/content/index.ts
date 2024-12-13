@@ -35,6 +35,14 @@ export const cms = {
       linkText: "See all work",
       jobs: [
         {
+          companyName: "EDIT. - Disruptive Digital Education",
+          jobTitle: "Education Mentor",
+          timePeriod: "December 2024 - Current",
+          description: [
+            `Currently mentoring students in analytics engineering, dbt, and the modern data stack, helping them build practical skills in data modeling, transformation, and pipeline development to excel in the field.`,
+          ],
+        },
+        {
           companyName: "Mindera",
           jobTitle: "Data Engineer",
           timePeriod: "December 2024 - Current",
@@ -103,6 +111,15 @@ export const cms = {
   workPage: {
     title: "Work",
     jobs: [
+      {
+        companyName: "EDIT. - Disruptive Digital Education",
+        jobTitle: "Education Mentor",
+        timePeriod: "December 2024 - Current",
+        description: [
+          `Mentoring students in analytics engineering, dbt, and the modern data stack, providing hands-on learning experiences to help them build practical skills in data modeling, transformation, and pipeline development.`,
+          `SQL, dbt, BigQuery, PostgreSQL, and Github.`,
+        ],
+      },
       {
         companyName: "Mindera",
         jobTitle: "Data Engineer",

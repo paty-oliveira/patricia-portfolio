@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom";
 
 import Card from "@/components/card";
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { cms } from "@/content";
 import { seo } from "@/content/seo";
@@ -13,7 +14,7 @@ import { seo } from "@/content/seo";
 const Projects: FC = () => {
   const navigate = useNavigate();
 
-  const { header, projectsPage } = cms;
+  const { header, projectsPage, footer } = cms;
   const { projects: metadata } = seo;
 
   const handleOnClick = (projectId: string) => {
@@ -40,6 +41,7 @@ const Projects: FC = () => {
           ))}
         </div>
       </section>
+      <Footer content={footer.content} />
     </main>
   );
 };

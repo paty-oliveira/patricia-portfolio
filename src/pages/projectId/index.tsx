@@ -9,6 +9,7 @@ import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import rehypeRaw from "rehype-raw";
 
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { cms } from "@/content";
 import { seo } from "@/content/seo";
@@ -18,7 +19,7 @@ const Project: FC = () => {
   const { projectId } = useParams();
   const navigate = useNavigate();
 
-  const { header, projectsPage } = cms;
+  const { header, projectsPage, footer } = cms;
   const { projects: metadata } = seo;
   const project = projectsPage.projects.find(
     (project) => project.id === projectId
@@ -104,6 +105,7 @@ const Project: FC = () => {
           )}
         </div>
       </section>
+      <Footer content={footer.content} />
     </main>
   );
 };

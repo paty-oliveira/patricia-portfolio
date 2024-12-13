@@ -3,6 +3,7 @@ import "../../styles/shared.css";
 import { FC } from "react";
 import { Helmet } from "react-helmet";
 
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Posts from "@/components/posts";
 import { cms } from "@/content";
@@ -11,7 +12,7 @@ import { seo } from "@/content/seo";
 import { groupPostsByYear, sortByYearDesc } from "./utils";
 
 const Blog: FC = () => {
-  const { header, blogPage } = cms;
+  const { header, blogPage, footer } = cms;
   const { blog: metadata } = seo;
 
   const postsByYear = groupPostsByYear(blogPage.posts);
@@ -28,6 +29,7 @@ const Blog: FC = () => {
         <h3 className="section__header weight-600">{blogPage.title}</h3>
         <Posts posts={postsSortedByYear} />
       </section>
+      <Footer content={footer.content} />
     </main>
   );
 };

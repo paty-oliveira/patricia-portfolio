@@ -4,13 +4,14 @@ import "./styles.css";
 import { FC } from "react";
 import { Helmet } from "react-helmet";
 
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Job from "@/components/job";
 import { cms } from "@/content";
 import { seo } from "@/content/seo";
 
 const Work: FC = () => {
-  const { header, workPage } = cms;
+  const { header, workPage, footer } = cms;
   const { work: metadata } = seo;
 
   return (
@@ -35,6 +36,7 @@ const Work: FC = () => {
           )}
         </div>
       </section>
+      <Footer content={footer.content} />
     </main>
   );
 };
