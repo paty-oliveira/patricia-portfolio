@@ -7,6 +7,7 @@ import { FaAngleLeft } from "react-icons/fa6";
 import ReactMarkdown from "react-markdown";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import rehypeRaw from "rehype-raw";
 
 import Header from "@/components/header";
 import { cms } from "@/content";
@@ -96,7 +97,11 @@ const Project: FC = () => {
           </div>
         </div>
         <div className="projects__content">
-          {error.length === 0 && <ReactMarkdown>{projectDocs}</ReactMarkdown>}
+          {error.length === 0 && (
+            <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+              {projectDocs}
+            </ReactMarkdown>
+          )}
         </div>
       </section>
     </main>

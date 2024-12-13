@@ -31,7 +31,10 @@ export const globalCssConfig: GlobalStyleObject = {
     margin: 0,
   },
   "ul, ol, li": {
-    listStyle: "none",
+    listStylePosition: "inside",
+  },
+  "ol ul li": {
+    marginLeft: "20px",
   },
   a: {
     display: "block",

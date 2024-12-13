@@ -57,14 +57,10 @@ export const cms = {
       linkText: "See all projects",
       projects: [
         {
-          id: "astro-nano",
-          title: "Astro Nano",
-          description: "Minimal portfolio and blog",
-        },
-        {
-          id: "astro-sphere",
-          title: "Astro Sphere",
-          description: "Portfolio and blog",
+          id: "financial-dashboard",
+          title: "Stock Analysis Dashboard",
+          description:
+            "A web app for exploring stocks with real-time data and interactive charts",
         },
       ],
     },
@@ -158,23 +154,15 @@ export const cms = {
     title: "Projects",
     projects: [
       {
-        id: "astro-nano",
-        title: "Astro Nano",
-        description: "Minimal portfolio and blog",
-        publicationDate: "Mar 26, 2024",
-        repoLink: "https://github.com/paty-oliveira/dbt-playground",
-        demoLink: "https://www.larstornoe.com/",
+        id: "financial-dashboard",
+        title: "Stock Analysis Dashboard",
+        description:
+          "A web app for exploring stocks with real-time data and interactive charts",
+        publicationDate: "Oct 1, 2024",
+        repoLink: "https://github.com/paty-oliveira/financial-dash",
+        demoLink: "https://stock-dash.streamlit.app/",
         repoOwner: "paty-oliveira",
-        repoName: "dbt-playground",
-      },
-      {
-        id: "astro-sphere",
-        title: "Astro Sphere",
-        description: "Portfolio and blog",
-        publicationDate: "Mar 26, 2024",
-        repoLink: "https://github.com/paty-oliveira/dbt-playground",
-        repoOwner: "paty-oliveira",
-        repoName: "dbt-playground",
+        repoName: "financial-dash",
       },
     ],
   },
