@@ -22,6 +22,12 @@ export const cms = {
       linkText: "See all posts",
       posts: [
         {
+          title: "Bringing AI to your dbt models with Snowflake Cortex",
+          description: "Boost automation and insights with AI-Powered SQL",
+          link: "https://patriciiaoliveira.substack.com/p/bringing-ai-to-your-dbt-models-with",
+          publishedTimestamp: 1749219809
+        },
+        {
           title: "Performing Fundamental Analysis of a Company using Python",
           description:
             "Automating Financial Analysis with Python: Tools and Techniques",
@@ -99,6 +105,12 @@ export const cms = {
   blogPage: {
     title: "Blog",
     posts: [
+      {
+        title: "Bringing AI to your dbt models with Snowflake Cortex",
+        description: "Boost automation and insights with AI-Powered SQL",
+        link:  "https://patriciiaoliveira.substack.com/p/bringing-ai-to-your-dbt-models-with",
+        publishedTimestamp: 1749219809
+      },
       {
         title: "Performing Fundamental Analysis of a Company using Python",
         description:
