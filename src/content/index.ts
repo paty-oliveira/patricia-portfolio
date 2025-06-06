@@ -70,6 +70,11 @@ export const cms = {
       title: "Latest Projects",
       linkText: "See all projects",
       projects: [
+      {
+          id: "sephora-reviews",
+          title: "Sentiment Analysis of Sephora Customer's Reviews",
+          description: "An ELT pipeline to analyze customer sentiment using Snowflake Cortex and dbt"
+      },
         {
           id: "financial-dashboard",
           title: "Stock Analysis Dashboard",
@@ -182,6 +187,15 @@ export const cms = {
   projectsPage: {
     title: "Projects",
     projects: [
+      {
+        id: "sephora-reviews",
+        title: "Sentiment Analysis of Sephora Customer's Reviews",
+        description: "An ELT pipeline to analyze customer sentiment using Snowflake Cortex and dbt",
+        publicationData: "Jun 6, 2025",
+        repoLink: "https://github.com/paty-oliveira/snowflake-sephora-analytics",
+        repoOwner: "paty-oliveira",
+        repoName: "snowflake-sephora-analytics"
+      },
       {
         id: "financial-dashboard",
         title: "Stock Analysis Dashboard",
