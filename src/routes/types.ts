@@ -1,3 +1,5 @@
+import { JSX } from "react";
+
 type Page = "homepage" | "blog" | "work" | "projects";
 
 type Path = "/" | "/blog" | "/work" | "/projects" | "/projects/:projectId";
