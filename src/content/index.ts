@@ -55,21 +55,18 @@ export const cms = {
           description: [
             `Currently building a scalable data platform for Dunelm to unify and process data, enabling better decision-making.`,
           ],
-        },
-        {
-          companyName: "Mindera",
-          jobTitle: "Frontend Engineer",
-          timePeriod: "June 2023 - November 2024",
-          description: [
-            `Contributed to the rebranding of core features for FanDuel Racing's desktop and mobile products, ensuring a modern and consistent user experience across platforms.`,
-          ],
-        },
+        }
       ],
     },
     latestProjects: {
       title: "Latest Projects",
       linkText: "See all projects",
       projects: [
+      {
+          id: "ai-assistant-pt",
+          title: "AI Assistant for Self Employers in Portugal",
+          description: "A web app that helps self-employed people in Portugal get clear answers about Social Security, taxes, and labor rules."
+      },
       {
           id: "sephora-reviews",
           title: "Sentiment Analysis of Sephora Customer's Reviews",
@@ -187,6 +184,16 @@ export const cms = {
   projectsPage: {
     title: "Projects",
     projects: [
+      {
+        id: "ai-assistant-pt",
+        title: "AI Assistant for Self Employers in Portugal",
+        description: "A web app that helps self-employed people in Portugal get clear answers about Social Security, taxes, and labor rules.",
+        publicationData: "Sep 10, 2025",
+        repoLink: "https://github.com/paty-oliveira/ai-assistant-self-employers-pt",
+        demoLink: "https://assistant-self-employeer-pt.onrender.com/",
+        repoOwner: "paty-oliveira",
+        repoName: "ai-assistant-self-employers-pt",
+      },
       {
         id: "sephora-reviews",
         title: "Sentiment Analysis of Sephora Customer's Reviews",
