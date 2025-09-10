@@ -65,7 +65,7 @@ export const cms = {
       {
           id: "ai-assistant-pt",
           title: "AI Assistant for Self Employers in Portugal",
-          description: "A web app that helps self-employed people in Portugal get clear answers about Social Security, taxes, and labor rules."
+          description: "A web app that helps self-employed people in Portugal get clear answers about Social Security, taxes, and labor rules"
       },
       {
           id: "sephora-reviews",
@@ -187,7 +187,7 @@ export const cms = {
       {
         id: "ai-assistant-pt",
         title: "AI Assistant for Self Employers in Portugal",
-        description: "A web app that helps self-employed people in Portugal get clear answers about Social Security, taxes, and labor rules.",
+        description: "A web app that helps self-employed people in Portugal get clear answers about Social Security, taxes, and labor rules",
         publicationData: "Sep 10, 2025",
         repoLink: "https://github.com/paty-oliveira/ai-assistant-self-employers-pt",
         demoLink: "https://assistant-self-employeer-pt.onrender.com/",
