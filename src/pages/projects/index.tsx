@@ -28,7 +28,7 @@ const Projects: FC = () => {
         <meta name={metadata.name} content={metadata.content} />
       </Helmet>
       <Header content={header.content} />
-      <section>
+      <section className="projects__section">
         <h3 className="section__header weight-600">{projectsPage.title}</h3>
         <div className="projects__content">
           {projectsPage.projects.map(({ title, description, id }) => (
