@@ -41,21 +41,21 @@ export const cms = {
       linkText: "See all work",
       jobs: [
         {
-          companyName: "EDIT. - Disruptive Digital Education",
-          jobTitle: "Education Mentor",
-          timePeriod: "December 2024 - Current",
-          description: [
-            `Currently mentoring students in analytics engineering, dbt, and the modern data stack, helping them build practical skills in data modeling, transformation, and pipeline development to excel in the field.`,
-          ],
-        },
-        {
           companyName: "Mindera",
           jobTitle: "Data Engineer",
           timePeriod: "December 2024 - Current",
           description: [
             `Currently building a scalable data platform for Dunelm to unify and process data, enabling better decision-making.`,
           ],
-        }
+        },
+        {
+          companyName: "EDIT. - Disruptive Digital Education",
+          jobTitle: "Education Mentor",
+          timePeriod: "December 2024 - August 2025",
+          description: [
+            `Mentored students in analytics engineering, dbt, and the modern data stack, helping them build practical skills in data modeling, transformation, and pipeline development to excel in the field.`,
+          ],
+        },
       ],
     },
     latestProjects: {
@@ -126,26 +126,26 @@ export const cms = {
     title: "Work",
     jobs: [
       {
-        companyName: "EDIT. - Disruptive Digital Education",
-        jobTitle: "Education Mentor",
-        timePeriod: "December 2024 - Current",
-        description: [
-          `Mentoring students in analytics engineering, dbt, and the modern data stack, providing hands-on learning experiences to help them build practical skills in data modeling, transformation, and pipeline development.`,
-          `SQL, dbt, BigQuery, PostgreSQL, and Github.`,
-        ],
-      },
-      {
         companyName: "Mindera",
-        jobTitle: "Data Engineer",
+        jobTitle: "Data Engineer - Full-time",
         timePeriod: "December 2024 - Current",
         description: [
           `Currently building a scalable data platform for Dunelm to unify and process data, enabling better decision-making.`,
           `SQL, Python, Terraform, dbt, Snowflake, AWS, and GitHub.`,
         ],
       },
+      { 
+        companyName: "EDIT. - Disruptive Digital Education",
+        jobTitle: "Education Mentor - Part-Time",
+        timePeriod: "December 2024 - August 2025",
+        description: [
+          `Mentored students in analytics engineering, dbt, and the modern data stack, providing hands-on learning experiences to help them build practical skills in data modeling, transformation, and pipeline development.`,
+          `SQL, dbt, BigQuery, PostgreSQL, and Github.`,
+        ],
+      },
       {
         companyName: "Mindera",
-        jobTitle: "Frontend Engineer",
+        jobTitle: "Frontend Engineer - Full-time",
         timePeriod: "June 2023 - November 2024",
         description: [
           `Contributed to the rebranding of core features for FanDuel Racing's desktop and mobile products, ensuring a modern and consistent user experience across platforms.`,
@@ -156,7 +156,7 @@ export const cms = {
       },
       {
         companyName: "Mindera",
-        jobTitle: "Data Engineer",
+        jobTitle: "Data Engineer - Full-time",
         timePeriod: "September 2021 - May 2023",
         description: [
           `Contributed to the development of an ELT pipeline that unified Dunelm's operational and sales data, enabling data-driven decision-making and shaping the company's business strategies.`,
@@ -170,7 +170,7 @@ export const cms = {
       },
       {
         companyName: "Critical TechWorks",
-        jobTitle: "Data Engineer",
+        jobTitle: "Data Engineer - Full-time",
         timePeriod: "April 2020 - September 2021",
         description: [
           `Contributed to the development of a robust ETL pipeline to unify data across BMW's systems, enabling data-driven decision-making and empowering the organization to adopt a data-centric approach.`,
