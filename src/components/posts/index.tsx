@@ -18,16 +18,14 @@ const Posts: FC<PostsProps> = ({ posts }) => {
         <>
           <h5 className="blog__content_year weight-600">{year}</h5>
           <div className="blog__content_posts">
-            {posts
-              .get(year)
-              ?.map(({ title, description, link }, index) => (
-                <Card
-                  key={index}
-                  title={title}
-                  description={description}
-                  onClick={() => handleOnClick(link)}
-                />
-              ))}
+            {posts.get(year)?.map(({ title, description, link }, index) => (
+              <Card
+                key={index}
+                title={title}
+                description={description}
+                onClick={() => handleOnClick(link)}
+              />
+            ))}
           </div>
         </>
       ))}

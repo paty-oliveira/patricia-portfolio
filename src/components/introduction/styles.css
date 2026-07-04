@@ -45,7 +45,7 @@ section {
 
 .my-photo {
   width: 100%;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
@@ -53,15 +53,17 @@ section {
     display: flex;
     gap: 4rem;
     align-items: center;
+    justify-content: space-between;
   }
 
   .introduction__text_content {
-    width: 70%;
+    width: 60%;
+    text-align: justify;
   }
 
   .introduction__img_content {
     display: block;
-    width: 30%;
+    width: 25%;
   }
 }
 
@@ -70,10 +72,11 @@ section {
     display: flex;
     align-items: center;
     gap: 4rem;
+    justify-content: space-between;
   }
 
   .introduction__text_content {
-    width: 80%;
+    width: 60%;
   }
 
   .introduction__img_content {
