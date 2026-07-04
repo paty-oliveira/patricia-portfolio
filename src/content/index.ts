@@ -49,7 +49,7 @@ export const cms = {
         {
           companyName: "Mindera",
           jobTitle: "Data Engineer",
-          timePeriod: "December 2024 - May 2026",
+          timePeriod: "December 2021 - May 2026",
           description: [
             `Contributed to the development of an ELT pipeline that unified Dunelm's operational and sales data, enabling data-driven decision-making and shaping the company's business strategy.`,
           ],
